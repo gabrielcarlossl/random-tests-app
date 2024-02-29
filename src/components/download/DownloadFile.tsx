@@ -2,6 +2,7 @@
 import React from 'react';
 import axios from 'axios';
 import { saveAs } from 'file-saver';
+import BackButton from '../button/BackButton';
 
 function DownloadFile() {
   const handleDownload = async () => {
@@ -45,7 +46,7 @@ function DownloadFile() {
 
   return (
     <>
-      <a href='/'>Voltar</a>
+      <BackButton url='/'>Voltar</BackButton>
       <div>
         <h1>Solicitar download</h1>
         <button onClick={handleRequestDownloadFile}>

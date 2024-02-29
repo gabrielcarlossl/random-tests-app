@@ -3,7 +3,7 @@ import React from 'react'
 export default function Root() {
     return (
       <>
-        <div id="sidebar">
+        <div>
           <h1>Pages</h1>
           <nav>
             <ul>
