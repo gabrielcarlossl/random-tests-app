@@ -9,6 +9,9 @@ import {
 import Root from './routes/root.tsx'
 import ErrorPage from './pages/NotFoundPage.tsx'
 import DownloadFile from '../src/components/download/DownloadFile.tsx'
+import Question from './pages/Question.tsx'
+import Card from './pages/Card.tsx'
+import Table from './pages/Table.tsx'
 
 const router = createBrowserRouter([
   {
@@ -20,7 +23,19 @@ const router = createBrowserRouter([
     path: "/download-file",
     element: <DownloadFile />
   },
-]);
+  {
+    path: "/answer-questions",
+    element: <Question />
+  },
+  {
+    path: "/card",
+    element: <Card />
+  },
+  {
+    path: "/table",
+    element: <Table />
+  },
+])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

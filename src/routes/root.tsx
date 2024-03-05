@@ -10,9 +10,18 @@ export default function Root() {
               <li>
                 <a href={`/download-file`}>Download File</a>
               </li>
+              <li>
+                <a href={`/answer-questions`}>Answer Questions</a>
+              </li>
+              <li>
+                <a href={`/card`}>Card Pagination</a>
+              </li>
+              <li>
+                <a href={`/table`}>Table</a>
+              </li>
             </ul>
           </nav>
         </div>
       </>
-    );
+    )
   }

@@ -4,12 +4,17 @@ import styled from '@emotion/styled'
 const GoBackButton = styled.a`
   text-decoration: none;
   color: black;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 5px 13px;
   :visited {
     color: black;
   }
   :hover {
-    font-weight: bold;
-    text-decoration: underline;
+    background-color: #cccc;
+  }
+  :active {
+    background-color: #666;
   }
 `
 

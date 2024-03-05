@@ -1,4 +1,5 @@
-import './App.css';
+import React from 'react'
+import './App.css'
 import DownloadFile from './components/download/DownloadFile'
 
 function App() {
@@ -10,4 +11,4 @@ function App() {
   )
 }
 
-export default App;
+export default App

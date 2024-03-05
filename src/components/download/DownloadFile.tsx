@@ -1,48 +1,48 @@
 
-import React from 'react';
-import axios from 'axios';
-import { saveAs } from 'file-saver';
-import BackButton from '../button/BackButton';
+import React from 'react'
+import axios from 'axios'
+import { saveAs } from 'file-saver'
+import BackButton from '../button/BackButton'
 
 function DownloadFile() {
   const handleDownload = async () => {
     try {
       const headers = {
         'X-Token': '0ad3ff1ec3-81b4c1a177-1708110716',
-      };
+      }
       const response = await axios.get('https://staging.datagateway.fractaltecnologia.com.br/api/v1/activities/2236/activity_file', {
         headers,
         responseType: 'blob' // Set responseType to blob
-      });
+      })
 
       if (response.status === 200) {
-        saveAs(response.data, 'nome_do_arquivo.docx');
+        saveAs(response.data, 'nome_do_arquivo.docx')
       } else {
-        console.error('Falha ao fazer a requisição:', response.status);
+        console.error('Falha ao fazer a requisição:', response.status)
       }
     } catch (error) {
-      console.error('Erro ao fazer a requisição:', error);
+      console.error('Erro ao fazer a requisição:', error)
     }
-  };
+  }
 
   const handleRequestDownloadFile = async () => {
     try {
       const headers = {
         'X-Token': '0ad3ff1ec3-81b4c1a177-1708110716',
-      };
+      }
       const response = await axios.get('https://staging.datagateway.fractaltecnologia.com.br/api/v1/activities/2236/print_activity?resource=questions&file_type=docx', {
         headers,
-      });
+      })
 
       if (response.status === 200) {
-        console.log('OK');
+        console.log('OK')
       } else {
-        console.error('Falha ao fazer a requisição:', response.status);
+        console.error('Falha ao fazer a requisição:', response.status)
       }
     } catch (error) {
-      console.error('Erro ao fazer a requisição:', error);
+      console.error('Erro ao fazer a requisição:', error)
     }
-  };
+  }
 
   return (
     <>
@@ -63,4 +63,4 @@ function DownloadFile() {
   )
 }
 
-export default DownloadFile;
+export default DownloadFile
