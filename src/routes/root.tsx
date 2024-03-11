@@ -19,6 +19,9 @@ export default function Root() {
               <li>
                 <a href={`/table`}>Table</a>
               </li>
+              <li>
+                <a href={`/checkbox-list`}>CheckBox List</a>
+              </li>
             </ul>
           </nav>
         </div>

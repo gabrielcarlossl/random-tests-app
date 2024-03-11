@@ -58,7 +58,7 @@ const Card = () => {
         const endIndex = Math.min(startIndex + itemsPerPage, data.length)
 
         return data.slice(startIndex, endIndex).map(item => (
-            <div key={item.id} style={{ border: '1px solid black', margin: '10px', padding: '10px' }}>
+            <div key={item.id} style={{ border: '1px solid black', margin: '10px', padding: '10px', width: 'fit-content' }}>
                 <p>ID: {item.id}</p>
                 <p>Content Module ID: {item.content_module_id}</p>
                 <p>Content Module Item ID: {item.content_module_item_id}</p>

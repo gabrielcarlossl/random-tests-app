@@ -10,8 +10,9 @@ import Root from './routes/root.tsx'
 import ErrorPage from './pages/NotFoundPage.tsx'
 import DownloadFile from '../src/components/download/DownloadFile.tsx'
 import Question from './pages/Question.tsx'
-import Card from './pages/Card.tsx'
+import Card from './pages/CardPage.tsx'
 import Table from './pages/Table.tsx'
+import CheckboxList from './pages/CheckBoxListPage.tsx'
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
   {
     path: "/table",
     element: <Table />
+  },
+  {
+    path: "/checkbox-list",
+    element: <CheckboxList />
   },
 ])
 
