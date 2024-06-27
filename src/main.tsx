@@ -13,6 +13,7 @@ import Question from './pages/Question.tsx'
 import Card from './pages/CardPage.tsx'
 import Table from './pages/Table.tsx'
 import CheckboxList from './pages/CheckBoxListPage.tsx'
+import ListWithSearch from './pages/AsyncCPFSelectPage.tsx'
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
   {
     path: "/checkbox-list",
     element: <CheckboxList />
+  },
+  {
+    path: "/list-with-search",
+    element: <ListWithSearch />
   },
 ])
 

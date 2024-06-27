@@ -22,6 +22,9 @@ export default function Root() {
               <li>
                 <a href={`/checkbox-list`}>CheckBox List</a>
               </li>
+              <li>
+                <a href={`/list-with-search`}>List with search</a>
+              </li>
             </ul>
           </nav>
         </div>
