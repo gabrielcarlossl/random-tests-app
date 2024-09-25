@@ -14,6 +14,7 @@ import Card from './pages/CardPage.tsx'
 import Table from './pages/Table.tsx'
 import CheckboxList from './pages/CheckBoxListPage.tsx'
 import ListWithSearch from './pages/AsyncCPFSelectPage.tsx'
+import CanvasTests from './pages/CanvasTests.tsx'
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
   {
     path: "/list-with-search",
     element: <ListWithSearch />
+  },
+  {
+    path: "/canvas",
+    element: <CanvasTests />
   },
 ])
 

@@ -25,6 +25,9 @@ export default function Root() {
               <li>
                 <a href={`/list-with-search`}>List with search</a>
               </li>
+              <li>
+                <a href={`/canvas`}>HTML Canvas Tests</a>
+              </li>
             </ul>
           </nav>
         </div>
